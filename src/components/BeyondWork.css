@@ -1,0 +1,284 @@
+.beyond-work {
+  padding: 6rem 0;
+  background: var(--background-light);
+}
+
+.beyond-work-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.beyond-work-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.beyond-work-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.beyond-work-text {
+  padding-right: 2rem;
+}
+
+.beyond-work-description {
+  font-size: 1.2rem;
+  color: var(--text-light);
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.beyond-work-description:last-child {
+  margin-bottom: 0;
+}
+
+/* Carousel Styles */
+.beyond-work-carousel {
+  position: relative;
+  width: 100%;
+}
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  flex-shrink: 0;
+}
+
+.activity-card {
+  position: relative;
+  background: var(--white);
+  padding: 0;
+  text-align: center;
+  height: 500px;
+  display: block;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.activity-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.activity-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.activity-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9));
+  color: var(--white);
+  padding: 2rem;
+  text-align: center;
+  z-index: 2;
+}
+
+.activity-icon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.activity-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 0.8rem;
+}
+
+.activity-description {
+  font-size: 1rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.activity-details {
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+  font-size: 0.9rem;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+/* Carousel Navigation */
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text-dark);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow);
+}
+
+.carousel-button:hover {
+  background: var(--white);
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: var(--shadow-hover);
+}
+
+.carousel-button.prev {
+  left: 20px;
+}
+
+.carousel-button.next {
+  right: 20px;
+}
+
+/* Carousel Dots */
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.carousel-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background: #ddd;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.carousel-dot.active {
+  background: var(--primary-color);
+  transform: scale(1.2);
+}
+
+.carousel-dot:hover {
+  background: var(--primary-color);
+  transform: scale(1.1);
+}
+
+@media (max-width: 1024px) {
+  .beyond-work-title {
+    font-size: 3rem;
+  }
+
+  .beyond-work-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .beyond-work-text {
+    padding-right: 0;
+  }
+
+  .activity-card {
+    height: 450px;
+  }
+
+  .activity-content {
+    padding: 1.5rem;
+  }
+
+  .activity-icon {
+    font-size: 2.5rem;
+  }
+
+  .activity-title {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .beyond-work {
+    padding: 4rem 0;
+  }
+
+  .beyond-work-title {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .beyond-work-content {
+    gap: 2rem;
+  }
+
+  .beyond-work-description {
+    font-size: 1.1rem;
+  }
+
+  .activity-card {
+    height: 400px;
+  }
+
+  .activity-content {
+    padding: 1rem;
+  }
+
+  .activity-icon {
+    font-size: 2.5rem;
+  }
+
+  .activity-title {
+    font-size: 1.3rem;
+  }
+
+  .activity-description {
+    font-size: 0.9rem;
+  }
+
+  .activity-details {
+    font-size: 0.85rem;
+  }
+
+  .carousel-button {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+
+  .carousel-button.prev {
+    left: 10px;
+  }
+
+  .carousel-button.next {
+    right: 10px;
+  }
+} 

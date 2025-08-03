@@ -16,39 +16,41 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <main style={{ paddingTop: '80px' }}>
-        <ScrollAnimation>
-          <Hero />
-        </ScrollAnimation>
-        
-        <ScrollAnimation delay={200}>
-          <About />
-        </ScrollAnimation>
-        
-        <ScrollAnimation delay={200}>
-          <Experience />
-        </ScrollAnimation>
-        
-        <ScrollAnimation delay={200}>
-          <Skills />
-        </ScrollAnimation>
-        
-        <ScrollAnimation delay={200}>
-          <Certifications />
-        </ScrollAnimation>
-        
-        <ScrollAnimation delay={200}>
-          <BeyondWork />
-        </ScrollAnimation>
-        
-        <ScrollAnimation delay={200}>
-          <Reading />
-        </ScrollAnimation>
-        
-        <ScrollAnimation delay={200}>
-          <Contact />
-        </ScrollAnimation>
-      </main>
+      <div className="main-content">
+        <main style={{ paddingTop: '80px' }}>
+          <ScrollAnimation>
+            <Hero />
+          </ScrollAnimation>
+          
+          <ScrollAnimation delay={200}>
+            <About />
+          </ScrollAnimation>
+          
+          <ScrollAnimation delay={200}>
+            <Experience />
+          </ScrollAnimation>
+          
+          <ScrollAnimation delay={200}>
+            <Skills />
+          </ScrollAnimation>
+          
+          <ScrollAnimation delay={200}>
+            <Certifications />
+          </ScrollAnimation>
+          
+          <ScrollAnimation delay={200}>
+            <BeyondWork />
+          </ScrollAnimation>
+          
+          <ScrollAnimation delay={200}>
+            <Reading />
+          </ScrollAnimation>
+          
+          <ScrollAnimation delay={200}>
+            <Contact />
+          </ScrollAnimation>
+        </main>
+      </div>
       <Footer />
     </div>
   );

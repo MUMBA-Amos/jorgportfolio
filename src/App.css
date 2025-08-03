@@ -22,17 +22,23 @@ body {
     sans-serif;
   line-height: 1.6;
   color: var(--text-dark);
-  background: var(--white);
+  background: var(--background-light);
 }
 
-/* App Container - 80% viewport */
+/* App Container */
 .App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main Content - 80% viewport */
+.main-content {
   width: 80%;
   max-width: 1400px;
   margin: 0 auto;
   background: var(--white);
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
-  min-height: 100vh;
+  flex: 1;
 }
 
 /* Typography */
@@ -73,19 +79,19 @@ a:hover {
 
 /* Responsive Design */
 @media (max-width: 1200px) {
-  .App {
+  .main-content {
     width: 90%;
   }
 }
 
 @media (max-width: 768px) {
-  .App {
+  .main-content {
     width: 95%;
   }
 }
 
 @media (max-width: 480px) {
-  .App {
+  .main-content {
     width: 100%;
   }
 } 

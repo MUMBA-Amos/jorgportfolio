@@ -16,7 +16,7 @@ const About = () => {
               <div className="about-section">
                 <div className="section-image">
                   <img 
-                    src="/professional-journey.jpg" 
+                    src="./professional-journey.jpg" 
                     alt="Jorg van Gaal - Professional Headshot" 
                     className="section-img"
                   />
@@ -38,7 +38,7 @@ const About = () => {
               <div className="about-section">
                 <div className="section-image">
                   <img 
-                    src="/leadership-style.jpg" 
+                    src="./leadership-style.JPG" 
                     alt="Jorg van Gaal - Leadership in Action" 
                     className="section-img"
                   />

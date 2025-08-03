@@ -7,35 +7,35 @@ const BeyondWork = () => {
   const activities = [
     {
       id: 1,
-      // icon: "🏃‍♂️",
+      icon: "🏃‍♂️",
       title: "Ultra Running",
       description: "Challenging myself in the Malaysian jungle",
       details: "Pushing physical and mental limits through endurance running in challenging terrain.",
-      image: "/running-activity.jpg"
+      image: "./running-activity.JPG"
     },
     {
       id: 2,
-      // icon: "🚴‍♂️",
+      icon: "🚴‍♂️",
       title: "Cycling",
       description: "Exploring mountains and new routes",
       details: "Discovering new perspectives while cycling through diverse landscapes and challenging climbs.",
-      image: "/cycling-activity.jpg"
+      image: "./cycling-activity.JPG"
     },
     {
       id: 3,
-      // icon: "✈️",
+      icon: "✈️",
       title: "Travel",
       description: "Family adventures and cultural exploration",
       details: "Creating lasting memories with family while immersing in different cultures and experiences.",
-      image: "/travel-activity.jpg"
+      image: "./travel-activity.JPG"
     },
     {
       id: 4,
-      // icon: "🌿",
+      icon: "🌿",
       title: "Nature",
       description: "Staying grounded in the outdoors",
       details: "Finding balance and perspective through connection with natural environments.",
-      image: "/nature-activity.jpg"
+      image: "./nature-activity.JPG"
     }
   ];
 

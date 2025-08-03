@@ -1,4 +1,15 @@
 /* Global Styles */
+:root {
+  --primary-color: #20c997;
+  --primary-dark: #1ba085;
+  --text-dark: #2d3748;
+  --text-light: #718096;
+  --white: #ffffff;
+  --background-light: #f7fafc;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-hover: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,33 +20,19 @@ body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #f8f9fa;
-  color: #333;
   line-height: 1.6;
+  color: var(--text-dark);
+  background: var(--white);
 }
 
+/* App Container - 80% viewport */
 .App {
+  width: 80%;
+  max-width: 1400px;
+  margin: 0 auto;
+  background: var(--white);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-main {
-  flex: 1;
-}
-
-/* Color Variables */
-:root {
-  --primary-color: #20c997;
-  --primary-dark: #1ba085;
-  --text-dark: #333;
-  --text-light: #666;
-  --background-light: #f8f9fa;
-  --white: #ffffff;
-  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  --shadow-hover: 0 8px 15px rgba(0, 0, 0, 0.15);
 }
 
 /* Typography */
@@ -53,7 +50,6 @@ button {
   cursor: pointer;
   border: none;
   outline: none;
-  font-family: inherit;
   transition: all 0.3s ease;
 }
 
@@ -64,6 +60,10 @@ a {
   transition: color 0.3s ease;
 }
 
+a:hover {
+  color: var(--primary-color);
+}
+
 /* Container */
 .container {
   max-width: 1200px;
@@ -71,9 +71,21 @@ a {
   padding: 0 2rem;
 }
 
-/* Responsive */
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .App {
+    width: 90%;
+  }
+}
+
 @media (max-width: 768px) {
-  .container {
-    padding: 0 1rem;
+  .App {
+    width: 95%;
+  }
+}
+
+@media (max-width: 480px) {
+  .App {
+    width: 100%;
   }
 } 

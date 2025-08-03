@@ -7,7 +7,7 @@ const BeyondWork = () => {
   const activities = [
     {
       id: 1,
-      icon: "🏃‍♂️",
+      // icon: "🏃‍♂️",
       title: "Ultra Running",
       description: "Challenging myself in the Malaysian jungle",
       details: "Pushing physical and mental limits through endurance running in challenging terrain.",
@@ -15,7 +15,7 @@ const BeyondWork = () => {
     },
     {
       id: 2,
-      icon: "🚴‍♂️",
+      // icon: "🚴‍♂️",
       title: "Cycling",
       description: "Exploring mountains and new routes",
       details: "Discovering new perspectives while cycling through diverse landscapes and challenging climbs.",
@@ -23,7 +23,7 @@ const BeyondWork = () => {
     },
     {
       id: 3,
-      icon: "✈️",
+      // icon: "✈️",
       title: "Travel",
       description: "Family adventures and cultural exploration",
       details: "Creating lasting memories with family while immersing in different cultures and experiences.",
@@ -31,7 +31,7 @@ const BeyondWork = () => {
     },
     {
       id: 4,
-      icon: "🌿",
+      // icon: "🌿",
       title: "Nature",
       description: "Staying grounded in the outdoors",
       details: "Finding balance and perspective through connection with natural environments.",

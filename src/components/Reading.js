@@ -21,7 +21,7 @@ const Reading = () => {
           
           <div className="reading-cta">
             <a 
-              href="https://www.goodreads.com/user/show/YOUR_GOODREADS_ID" 
+              href="https://www.goodreads.com/user/show/105749455-jorg-van-gaal" 
               target="_blank" 
               rel="noopener noreferrer"
               className="goodreads-button"

@@ -1,0 +1,161 @@
+.kiva {
+  padding: 6rem 0;
+  background: var(--background-light);
+}
+
+.kiva-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.kiva-title {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--text-dark);
+  position: relative;
+}
+
+.kiva-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: var(--primary-color);
+  border-radius: 2px;
+}
+
+.kiva-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.kiva-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.kiva-subtitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.kiva-description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-light);
+  margin-bottom: 2rem;
+}
+
+.kiva-cta {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.kiva-button {
+  display: inline-block;
+  background: var(--primary-color);
+  color: var(--white);
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow);
+}
+
+.kiva-button:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+}
+
+.kiva-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.kiva-stat {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+}
+
+.kiva-stat:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+.kiva-stat h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 0.8rem;
+}
+
+.kiva-stat p {
+  font-size: 1rem;
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .kiva {
+    padding: 4rem 0;
+  }
+  
+  .kiva-container {
+    padding: 0 1rem;
+  }
+  
+  .kiva-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .kiva-subtitle {
+    font-size: 1.5rem;
+  }
+  
+  .kiva-description {
+    font-size: 1rem;
+  }
+  
+  .kiva-stats {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .kiva-stat {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .kiva-title {
+    font-size: 2rem;
+  }
+  
+  .kiva-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+}

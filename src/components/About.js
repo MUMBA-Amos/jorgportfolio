@@ -46,8 +46,8 @@ const About = () => {
                 <h3 className="section-heading">Leadership Style</h3>
                 <p className="about-description">
                   Colleagues often describe me as direct but empathetic. I'm not one to dance around issues. I believe in honesty, 
-                  clarity, and creating environments where people feel safe to contribute, experiment, and grow. My assessments back 
-                  that up: high emotional intelligence, strong adaptability, and an ability to lead calmly through uncertainty and change.
+                  clarity, integrity, and creating environments where people feel safe to contribute, experiment, and grow. Creating 
+                  'Psychological Safety' in companies and teams is one of my top priorities!
                 </p>
               </div>
             </div>

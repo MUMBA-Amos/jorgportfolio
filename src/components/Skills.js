@@ -33,7 +33,8 @@ const Skills = () => {
         "Solar Energy",
         "Logistics",
         "Retail",
-        "Consulting"
+        "Consulting",
+        "Mining"
       ]
     },
     {

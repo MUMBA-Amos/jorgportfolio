@@ -63,8 +63,7 @@ const BeyondWork = () => {
               and full of perspective.
             </p>
             <p className="beyond-work-description">
-              Those passions shape my work too—I naturally gravitate to roles and cultures that blend adventure with ambition. 
-              Now, I'm looking for my next challenge. I want to work with a company that values authenticity, flexibility, and forward motion.
+              Those passions shape my work too—I naturally gravitate to roles and cultures that blend adventure with ambition.
             </p>
           </div>
           
@@ -90,7 +89,6 @@ const BeyondWork = () => {
                         <span className="activity-icon">{activity.icon}</span>
                         <h3 className="activity-title">{activity.title}</h3>
                         <p className="activity-description">{activity.description}</p>
-                        <p className="activity-details">{activity.details}</p>
                       </div>
                     </div>
                   </div>

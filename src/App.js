@@ -6,6 +6,7 @@ import Experience from './components/Experience';
 import Skills from './components/Skills';
 import Certifications from './components/Certifications';
 import BeyondWork from './components/BeyondWork';
+import Kiva from './components/Kiva';
 import Reading from './components/Reading';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -40,6 +41,10 @@ function App() {
           
           <ScrollAnimation delay={200}>
             <BeyondWork />
+          </ScrollAnimation>
+          
+          <ScrollAnimation delay={200}>
+            <Kiva />
           </ScrollAnimation>
           
           <ScrollAnimation delay={200}>

@@ -1,0 +1,5 @@
+[33m6eaab82[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m Update portfolio content: Leadership style, Mining skill, Beyond Work edits, and new KIVA section
+[33md3a45a6[m Update link: I put the goodreads link
+[33m51c8c8d[m feat: Removed the Icons in the beyonf work
+[33m0f1c0f6[m Update layout: 80% main content width with full-width footer
+[33meed3bb2[m Fix viewport width to 80% and update image paths for Vercel deployment
